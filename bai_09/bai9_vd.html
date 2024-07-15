@@ -1,0 +1,70 @@
+
+</html><!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bảng điểm</title>
+</head>
+
+<body>
+  <table id="diem" style="border: 2px solid #008CBA; border-collapse: collapse; width: 500px;">
+  
+  </table>
+  
+  <script type="text/JavaScript" >
+    const render = document.querySelector("#diem")
+    const data = [
+      {
+        name: "Lê Minh Ghi",
+        toan: 10,
+        van: 10,
+        anh: 10,
+        ly: 10,
+        hoá: undefined
+      },
+      {
+        name: "Lê Minh Ghi",
+        toan: 10,
+        van: 10,
+        anh: 10,
+        ly: 10,
+        hoá: undefined
+      },
+      // ... (other data objects)
+    ]
+   let html = "";
+
+data.forEach((value) => {
+  html += `
+    <tr>
+      <td>${value.name || ""}</td>
+      <td>${Number(value.toan) || ""}</td>
+      <td>${Number(value.van) || ""}</td>
+      <td>${Number(value.anh) || ""}</td>
+      <td>${Number(value.ly) || ""}</td>
+      <td>${value.hoa || ""}</td>
+    </tr>
+  `;
+});
+
+render.innerHTML = `
+  <tr style="background-color: #008CBA; color: white;">
+    <th rowspan="2">Họ và tên</th>
+    <th colspan="6">Điểm thi</th>
+  </tr>
+  <tr>
+    <th style="background-color: red; color: white;">Toán</th>
+    <th style="background-color: greenyellow; color: white;">Văn</th>
+    <th style="background-color: blue; color: white;">Anh</th>
+    <th style="background-color: violet; color: white;">Lý</th>
+    <th style="background-color: orange; color: white;">Hoá</th>
+  </tr>
+  ${html}
+`;
+
+  </script>
+</body>
+
+</html>

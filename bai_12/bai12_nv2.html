@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng kí môn thi tốt nghiệp</title>
+</head>
+<body>
+    <h1>Đăng kí môn thi tốt nghiệp</h1>
+    <form>
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name"><br><br>
+            
+            <label for="cccd">CCCD:</label>
+            <input type="number" id="cccd" name="cccd"><br><br>
+            
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+            
+            <label>Giới tính:</label>
+            <input type="radio" id="male" name="gender" value="Nam">
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label><br><br>
+    
+            <legend>Thông tin đăng ký</legend>
+            <label for="subject">Môn thi:</label>
+            <input type="checkbox" id="toan" name="subject" value="Toán">
+            <label for="toan">Toán</label>
+            <input type="checkbox" id="van" name="subject" value="Văn">
+            <label for="van">Văn</label>
+            <input type="checkbox" id="english" name="subject" value="Ngoại ngữ">
+            <label for="english">Ngoại ngữ</label><br><br>
+            
+                        
+            <label for="option">Tổ hợp môn</label>
+            <select id="option">
+              <option value="volvo">Khoa học tự nhiên</option>
+              <option value="saab">Khoa học xã hội</option>
+            </select><br><br>
+        <input type="submit" value="Gửi thông tin">
+    </form>
+</body>
+</html>

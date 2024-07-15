@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu HTML và CSS</title>
+    <style>
+        h1 {
+            color: red;
+            text-align: center;
+        }
+        h2 {
+            color: blue;
+        }
+        nav {
+            text-align: right;
+        }
+        li {
+            display: inline;
+            border: 1px solid blue;
+            padding: 5px;
+            background-color: lime;
+        }
+        a:hover {
+            color: red;
+            background-color: cyan;
+        }
+        h2 + p {
+            color: red;
+        }
+        .hide {
+            display: none;
+        }
+        .active + img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Giới thiệu HTML và CSS</h1>
+    <nav>
+        <ul>
+            <li><a href="#P1">Giới thiệu HTML</a></li>
+            <li><a href="#P2">Giới thiệu CSS</a></li>
+        </ul>
+    </nav>
+    <h2 id="P1">Giới thiệu HTML</h2>
+    <p>HTML là gì</p>
+    <p>HTML - tên viết tắt của HyperText Markup Language, ngôn ngữ đánh dấu siêu văn bản, là ngôn ngữ đặc biệt dùng để thiết kế nội dung các trang web và được thể hiện bằng trình duyệt. Cấu trúc một tệp HTML là một cấu trúc dạng cây của các phần tử HTML.</p>
+    <a href="https://en.wikipedia.org/wiki/HTML">Link xem thêm chi tiết về HTML tại đây</a>
+    <a href="https://www.w3schools.com/html/default.asp">Link xem và tự học HTML tại đây</a>
+    <h2 id="P2">Giới thiệu CSS</h2>
+    <p>CSS là gì</p>
+    <p>CSS (Cascading Style Sheets) là ngôn ngữ định dạng đặc biệt được dùng để mô tả cách thể hiện của văn bản HTML trong trang web.</p>
+    <a href="https://en.wikipedia.org/wiki/CSS">Link xem thêm chi tiết về CSS tại đây</a>
+    <a href="https://www.w3schools.com/css/default.asp">Link xem và tự học CSS tại đây</a>
+    <a class="active" href="#P1">Xem logo của HTML</a>
+    <img src="html-logo.png" alt="HTML Logo" class="hide">
+    <a class="active" href="#P2">Xem logo của CSS</a>
+    <img src="css-logo.png" alt="CSS Logo" class="hide">
+</body>
+</html>

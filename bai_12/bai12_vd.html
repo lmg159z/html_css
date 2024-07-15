@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký thành viên câu lạc bộ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="submit"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đăng ký thành viên câu lạc bộ</h1>
+    <form>
+        <fieldset>
+            <legend>Thông tin cá nhân</legend>
+            <label for="name">Họ và tên:</label>
+            <input type="text" id="name" name="name" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            
+            <label for="dob">Ngày sinh:</label>
+            <input type="date" id="dob" name="dob" required><br>
+            
+            <label>Giới tính:</label>
+            <input type="radio" id="male" name="gender" value="Nam">
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="Nữ">
+            <label for="female">Nữ</label><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Thông tin đăng ký</legend>
+            <label for="interests">Sở thích:</label>
+            <input type="checkbox" id="sports" name="interests" value="Thể thao">
+            <label for="sports">Thể thao</label>
+            <input type="checkbox" id="music" name="interests" value="Âm nhạc">
+            <label for="music">Âm nhạc</label>
+            <input type="checkbox" id="art" name="interests" value="Nghệ thuật">
+            <label for="art">Nghệ thuật</label>
+            <input type="checkbox" id="reading" name="interests" value="Đọc sách">
+            <label for="reading">Đọc sách</label><br>
+            
+            <label for="membership-type">Loại thành viên:</label>
+            <select id="membership-type" name="membership-type">
+                <option value="regular">Thành viên thường</option>
+                <option value="vip">Thành viên VIP</option>
+                <option value="lifetime">Thành viên trọn đời</option>
+            </select><br>
+        </fieldset>
+        
+        <input type="submit" value="Đăng ký">
+    </form>
+</body>
+</html>
